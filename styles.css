@@ -1,0 +1,165 @@
+body, h1, h2, p {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-left p {
+    font-size: 10px;
+    color: #999;
+    text-align: left;
+}
+
+.header-left h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: left;
+}
+
+.header-right {
+    flex: 2;
+    text-align: left;
+}
+
+.header-right p {
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+}
+
+.header-right h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.header-right ul li {
+    font-size: 1.2em;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.header-right ul li button {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: left;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content-header p {
+    flex: 1;
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+}
+
+.content-body {
+    display: flex;
+    margin-bottom: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    text-align: left;
+}
+
+.content-body.active {
+    max-height: 1000px; /* Adjust as needed */
+    transition: max-height 0.5s ease-in;
+    text-align: left;
+}
+
+.content-left {
+    flex: 1;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.content-middle {
+    flex: 2;
+    text-align: left;
+}
+
+.content-middle h2 {
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+}
+
+.content-right {
+    flex: 3;
+    padding-left: 20px;
+    text-align: left;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.animated-text {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+    text-align: left;
+}
